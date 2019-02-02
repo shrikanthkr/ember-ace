@@ -109,10 +109,9 @@ export default Component.extend({
 
     editor.getSession().on('change', (event, session) => {
       const update = this.get('update');
-      console.log(event);
-      console.log(session);
+    
       if (update && !this._silenceUpdates) {
-        run(() => update(session.getValue()));
+        run(() => update(event, session.getValue()));
       }
     });
 

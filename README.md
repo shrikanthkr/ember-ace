@@ -20,7 +20,7 @@ See the application controller in this addon's dummy application for usage examp
 
 #### Core
  - `value`: the string value of the editor
- - `update(newValue)`: an action triggered when the value of the editor changes
+ - `update(event, newValue)`: an action triggered when the value of the editor changes
  - `ready(editor)`: an action triggered when the Ace `Editor` is instantiated
 
 #### Configuration
